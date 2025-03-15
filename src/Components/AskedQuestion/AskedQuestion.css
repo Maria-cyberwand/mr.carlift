@@ -1,0 +1,82 @@
+.AskedQuestion {
+  display: flex;
+  padding: 61px 51px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 1px solid #1e1e1e;
+  background: url("../../assets/AskedQuestion.png") lightgray repeat;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.AskedQuestion .AskedTextSection {
+  width: 722px;
+  height: 122px;
+  margin: 0 auto;
+}
+.AskedQuestion .AskedTextSection h1 {
+  font-family: "Lufga Bold";
+  color: var(--text-color);
+  font-size: 46px;
+  line-height: 66px;
+  text-align: center;
+}
+.AskedQuestion .AskedTextSection span {
+  color: var(--primary-color);
+}
+.AskedQuestion .AskedTextSection p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.accordion {
+  border-radius: 14px !important;
+  border: 2px solid #94d93b;
+  background: #fff;
+  margin-bottom: 30px !important;
+}
+.accordions .accordionSummary {
+  padding: 16px;
+}
+.accordionHeading {
+  color: #1e1e1e !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 28px !important;
+}
+.accordionText {
+  color: #545252 !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+}
+.accordion-icon {
+  background-color: #94d93b !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .AskedQuestion {
+    padding: 30px 12px;
+  }
+  .AskedQuestion .AskedTextSection {
+    width: 100%;
+  }
+  .accordions .accordionSummary {
+    padding: 8px 16px !important;
+  }
+}

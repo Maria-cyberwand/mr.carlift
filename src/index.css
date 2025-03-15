@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Poppins Regular */
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("./assets/Fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Poppins Bold */
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("./assets/Fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Lufga Regular */
+@font-face {
+  font-family: "Lufga Regular";
+  src: url("./assets/Fonts/LufgaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Lufga Bold */
+@font-face {
+  font-family: "Lufga Bold";
+  src: url("./assets/Fonts/LufgaBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #94d93b;
+  --text-color: #1e1e1e;
+}
+
+body {
+  background-color: #f7f7fb;
+  font-family: "Poppins Regular";
+}
+.wrapper {
+  width: 96% !important;
+  margin: 0 auto !important;
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  gap: 22px;
+}
+button {
+  background-color: #94d93b;
+  color: var(--text-color);
+}
+.error-input {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.input-wrapper {
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  margin-top: 94px;
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Lufga Bold";
+}
+.page_404 img {
+  width: 100%;
+}
+.four_zero_four_bg {
+  background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.four_zero_four_bg h1 {
+  font-size: 200px;
+  text-align: center;
+  color: var(--text-color);
+}
+.four_zero_four_bg h3 {
+  font-size: 80px;
+  text-align: center;
+  color: var(--text-color);
+}
+.four_zero_four_bg p {
+  font-size: 50px;
+  text-align: center;
+  color: var(--primary-color);
+}

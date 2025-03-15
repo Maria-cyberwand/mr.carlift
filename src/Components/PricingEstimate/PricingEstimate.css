@@ -1,0 +1,209 @@
+.EstimateContainer {
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.EstimateContainer .EstimateText {
+  width: 723px;
+  margin: 0 auto;
+}
+.EstimateContainer .EstimateText h1 {
+  color: #1a191b;
+  text-align: center;
+  font-family: "Lufga Bold";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144.45%;
+  letter-spacing: -1.84px;
+}
+.EstimateContainer .EstimateText h1 span {
+  color: var(--primary-color);
+}
+.EstimateContainer .EstimateText p {
+  color: #545252;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.EstimateForm {
+  display: flex;
+  width: 100%;
+  margin: 56px auto 0;
+  padding: 39px 24px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 38px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.formSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.formSection h1 {
+  color: #545252;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+.dropDownContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+label {
+  color: #393534;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 250% */
+  text-transform: capitalize;
+}
+.custom-select {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  height: 44px;
+  padding: 0px 10px;
+  font-size: 16px;
+  background: url("../../assets/ArrowHead.svg") no-repeat right 10px center;
+  background-size: 14px 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.css-160cm8n-MuiSlider-root {
+  padding: 0 !important;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Spacing between checkboxes */
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Spacing between checkboxes */
+}
+
+.day-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.day-checkbox:hover {
+  background-color: #eaeaea;
+}
+
+.day-checkbox.checked {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.dropDownContainer button {
+  width: 200px;
+  background-color: var(--primary-color);
+}
+.EstimationResult {
+  display: flex;
+  gap: 22px;
+}
+.ResultWeekly,
+.ResultMonthly {
+  display: flex;
+  flex-direction: column;
+}
+.EstimateResultBox {
+  display: flex;
+  width: 280px;
+  padding: 18px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  box-shadow: 0px 1px 61.7px 0px rgba(0, 0, 0, 0.06) inset;
+}
+#monthlyestimationResult,
+#weeklyestimationResult {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1.08px;
+  text-transform: capitalize;
+}
+.importantNote {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+}
+.importantNote p {
+  color: #545252;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.imgSection {
+  width: 400px;
+  height: 445px;
+  padding: 20px;
+}
+.imgSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .EstimateContainer .EstimateText {
+    width: 100%;
+  }
+  .EstimateForm {
+    flex-direction: column;
+  }
+  .formSection {
+    width: 100%;
+  }
+  .EstimateResultBox {
+    width: 140px;
+    padding: 8px 15px;
+  }
+  #monthlyestimationResult,
+  #weeklyestimationResult {
+    font-size: 20px !important;
+  }
+  .imgSection {
+    display: none;
+  }
+}

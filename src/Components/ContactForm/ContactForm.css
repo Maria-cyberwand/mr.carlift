@@ -1,0 +1,173 @@
+.ContactFormContainer {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+  border-radius: 32px;
+  margin-top: 30px;
+  height: 670px;
+  background-color: #fff;
+}
+.ContactFormContainer .FormImage {
+  display: flex;
+  width: 60%;
+  padding: 54px 58px 54px 73px;
+  align-items: center;
+  gap: 10px;
+  background-image: url("../../assets/ContactForm.jfif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 32px 0 0 32px;
+  position: relative;
+  height: 100%;
+}
+.ContactFormContainer .FormImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  z-index: 1;
+}
+.ContactFormContainer .FormImage .FormImageContent {
+  display: flex;
+  width: 357px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 55px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+.ContactFormContainer .FormImage .FormImageContent .FormImageText {
+  display: flex;
+  flex-direction: column;
+}
+.ContactFormContainer .FormImage .FormImageContent h1 {
+  color: #fff;
+  font-family: "Lufga Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105%; /* 67.2px */
+  letter-spacing: -2.56px;
+}
+.ContactFormContainer .FormImage .FormImageContent p {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.ContactFormContainer .FormImage .FormImageButtons {
+  display: flex;
+  width: 355px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.ContactFormContainer .FormImage .FormImageButtons a {
+  display: flex;
+  width: 355px;
+  height: 47px;
+  max-width: 443.69px;
+  padding: 12.85px 42.35px 14.68px 42.54px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.92px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(148, 217, 59, 0.02);
+  backdrop-filter: blur(25.200000762939453px);
+  text-decoration: none;
+  color: #fff;
+}
+.ContactFormContainer .ContactFormContent form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+  height: 100%;
+}
+.ContactFormContainer .ContactFormContent .ContactFormHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  width: 90%;
+}
+.ContactFormContainer .ContactFormContent .ContactFormHeading h1 {
+  color: #1a191b;
+  font-family: "Lufga Bold";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105%; /* 48.3px */
+  letter-spacing: -1.84px;
+  padding-top: 30px;
+}
+.ContactFormContainer .ContactFormContent .ContactFormHeading h1 span {
+  color: var(--primary-color);
+}
+.ContactFormContainer .ContactFormContent .ContactFormHeading p {
+  color: #545252;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.ContactFormMainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 24px;
+  width: 100%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.ContactFormMainSection .twoinputs {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+.ContactFormMainSection .oneinput {
+  width: 100%;
+}
+.ContactFormContainer button {
+  background-color: var(--primary-color);
+}
+.MuiButton-outlined {
+  border: 2px solid var(--primary-color) !important;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .ContactFormContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .ContactFormContainer .FormImage {
+    width: 100%;
+    padding: 30px 15px 30px 15px;
+    justify-content: center;
+  }
+  .ContactFormMainSection {
+    padding-right: 0px;
+  }
+  .ContactFormContainer .ContactFormContent {
+    width: 100%;
+    justify-content: center;
+    padding-inline: 15px;
+  }
+  .ContactFormContainer .ContactFormContent .ContactFormHeading h1 {
+    width: 100%;
+  }
+  .ContactFormContainer button {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,100 @@
+.JoinUsContainer {
+  display: flex;
+  padding: 48px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  border-radius: 24px;
+  background-image: url("../../assets/JoinUsImg.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.JoinUsContainer .JoinUsText {
+  width: 800px;
+}
+.JoinUsContainer .JoinUsText h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Lufga Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144.45%;
+  letter-spacing: -1.84px;
+}
+.JoinUsContainer .JoinUsText h1 span {
+  color: var(--primary-color);
+}
+.JoinUsContainer .JoinUsText p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.JoinUsCards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.JoinUsCards .card {
+  display: flex;
+  width: 550px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 16px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(17.649999618530273px);
+}
+.JoinUsCards .card .img {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 50%;
+  border: 1.6px solid rgba(148, 217, 59, 0.15);
+  background: rgba(148, 217, 59, 0.95);
+  width: 70px;
+  height: 70px;
+}
+.JoinText p {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
+.JoinText li {
+  width: 474px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.JoinUsContainer button {
+  background-color: var(--primary-color);
+}
+@media screen and (max-width: 768px) {
+  .JoinUsContainer .JoinUsText {
+    width: 100%;
+  }
+  .JoinUsCards {
+    flex-direction: column;
+  }
+  .JoinUsCards .card {
+    width: 100%;
+  }
+  .JoinText li {
+    width: 100%;
+  }
+}

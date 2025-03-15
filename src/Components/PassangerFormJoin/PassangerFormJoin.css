@@ -1,0 +1,150 @@
+.PassangerFormJoin {
+  margin-top: 94px;
+  display: flex;
+  gap: 18px;
+}
+.PassangerFormJoin .FormSection {
+  display: flex;
+  width: 100%;
+  padding: 39px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+.PassangerFormJoin .FormSection .FormText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.PassangerFormJoin .FormSection h1 {
+  color: #1a191b;
+  font-family: "Lufga Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%; /* 48.3px */
+  letter-spacing: -1.84px;
+  text-transform: capitalize;
+}
+.PassangerFormJoin .FormSection h1 span {
+  color: #94d93b;
+}
+.PassangerFormJoin .FormSection p {
+  color: #545252;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.PassangerFormJoin .FormContentSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 18px;
+}
+.PassangerFormJoin .FormContentSection .twoinputs {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+input {
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.45);
+  color: rgba(57, 53, 52, 0.56);
+  font-size: 16px;
+  padding: 0 18px;
+  width: 100%;
+}
+textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.45);
+  color: rgba(57, 53, 52, 0.56);
+  font-size: 16px;
+  padding: 18px;
+  width: 100%;
+}
+
+.PassangerFormJoin .ImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  max-width: 80%;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: url("../../assets/PassangerFormJoin.png") 50% / cover no-repeat;
+  position: relative;
+  overflow: hidden; /* Ensures content doesn't spill outside */
+}
+
+.PassangerFormJoin .ImageSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay with higher opacity */
+  border-radius: 24px;
+  z-index: 1; /* Below content */
+}
+
+.PassangerFormJoin .ImageContentSection {
+  position: relative; /* Allows content to stay above the overlay */
+  z-index: 2; /* Higher than the overlay */
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+  background-color: #ffffff40;
+  border: 1px solid #fff;
+  border-radius: 22px;
+}
+
+.PassangerFormJoin .ImageContentSection h1 {
+  color: #fff;
+  font-family: "Lufga Bold";
+  font-size: 48px;
+  width: 72%;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.84px;
+  text-transform: capitalize;
+}
+
+.PassangerFormJoin .ImageContentSection h1 span {
+  color: var(--primary-color);
+}
+
+.PassangerFormJoin .ImageContentSection p {
+  color: #fff;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+}
+.PassangerFormJoin button {
+  background-color: var(--primary-color);
+}
+@media screen and (max-width: 768px) {
+  .PassangerFormJoin .FormSection h1 {
+    font-size: 28px;
+  }
+  .PassangerFormJoin .FormSection p {
+    font-size: 12px;
+  }
+  .PassangerFormJoin {
+    flex-direction: column;
+  }
+  .PassangerFormJoin .ImageSection {
+    max-width: 100%;
+  }
+}

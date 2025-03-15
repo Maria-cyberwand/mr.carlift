@@ -1,0 +1,151 @@
+.WhyUsContainer {
+  background-image: url("../../assets/WhyUsBackgroundImg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 900px;
+  border-radius: 24px;
+  background-color: #1e1e1e;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  background-blend-mode: overlay; /* Blend the background image and overlay */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.WhyUsContainer::before {
+  content: ""; /* Necessary to create the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust opacity here for the overlay */
+  border-radius: 24px; /* Ensure the overlay matches the container's rounded corners */
+  z-index: 1; /* Ensure overlay is behind content */
+}
+
+.headingContainer {
+  width: 722px;
+  height: 122px;
+  margin: 0 auto;
+  position: relative; /* Ensures the heading content is above the overlay */
+  z-index: 9; /* Ensures the content is above the overlay */
+}
+
+.headingContainer h1 {
+  margin-top: 32px;
+  color: #fff;
+  font-family: "Lufga Bold";
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  z-index: 9; /* Ensures the heading text is above the overlay */
+}
+.headingContainer h1 span {
+  color: var(--primary-color);
+}
+.headingContainer p {
+  color: #d9d9d9;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  z-index: 9;
+}
+.benefitsContainer hr {
+  opacity: 0.5;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.benefitsContainer .passengerBenefits {
+  display: flex;
+  align-items: flex-end;
+  gap: 60px;
+  align-self: stretch;
+  margin: 20px 60px;
+}
+.benefitsContainer .passengerBenefits .BenefitsPassengerText {
+  width: 285px;
+}
+.benefitsContainer .passengerBenefits .BenefitsPassengerText h1 {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 500;
+  color: #fff;
+}
+.benefitsContainer .passengerBenefits .BenefitsPassengerText h1 span {
+  color: var(--primary-color);
+}
+.benefitsContainer .passengerBenefits .BenefitsPassengerText p {
+  color: #d9d9d9;
+  font-size: 12px;
+  line-height: 24px;
+}
+.benefitsContainer .passengerBenefits .PassengerBenefitsBox {
+  display: flex;
+  gap: 10px;
+}
+.BenefitBox {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 6px;
+  border: 1px solid #d9d9d958;
+  background-color: #ffffff26;
+  color: #fff;
+  font-size: 12px;
+}
+.ImgContainer {
+  border-radius: 18px;
+  height: 448px;
+  width: 92%;
+  margin: 0 auto;
+  border: 1px solid #d9d9d958;
+}
+.ImgContainer img {
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .WhyUsContainer {
+    height: 924px;
+  }
+  .headingContainer {
+    width: 92%;
+  }
+  .headingContainer h1 {
+    font-size: 32px;
+  }
+  .benefitsContainer {
+    margin-top: 16px;
+  }
+  .benefitsContainer .passengerBenefits {
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 22px;
+  }
+  .benefitsContainer .passengerBenefits .PassengerBenefitsBox {
+    flex-wrap: wrap;
+  }
+  .benefitsContainer .passengerBenefits .BenefitsPassengerText {
+    width: 100%;
+  }
+  .benefitsContainer hr {
+    margin: 0;
+  }
+  .ImgContainer {
+    height: 240px;
+  }
+}

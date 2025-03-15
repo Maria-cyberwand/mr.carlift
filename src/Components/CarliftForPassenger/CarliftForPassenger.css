@@ -1,0 +1,152 @@
+.CarliftForPassenger {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 18px;
+}
+.CarliftForPassengerContent {
+  display: flex;
+  padding: 45px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  width: 94%;
+}
+
+.CarliftForPassenger .CarliftForPassengerContent .CarliftForPassengerText h1 {
+  color: #1a191b;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144.45%;
+  letter-spacing: -1.84px;
+}
+.CarliftForPassenger
+  .CarliftForPassengerContent
+  .CarliftForPassengerText
+  h1
+  span {
+  color: var(--primary-color);
+}
+
+.CarliftForPassenger .CarliftForPassengerContent .CarliftForPassengerText p {
+  color: #545252;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.CarliftForPassengerLists {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.CarliftForPassengerLists .List {
+  display: flex;
+  gap: 22px;
+}
+.CarliftForPassengerLists .List .CarliftForPassengerimgSection {
+  display: flex;
+  width: 60px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22px;
+  border: 1.5px solid rgba(148, 217, 59, 0.15);
+  background: #94d93b;
+}
+.CarliftForPassengerLists .CarliftForPassengerimgSection img {
+  width: 100%;
+  height: 100%;
+}
+.CarliftForPassengerLists .List .CarliftForPassengertextSection {
+  display: flex;
+  flex-direction: column;
+}
+.CarliftForPassengerLists .List .CarliftForPassengertextSection h1 {
+  color: #1e1e1e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 127.273% */
+}
+.CarliftForPassengerLists .List .CarliftForPassengertextSection p {
+  color: #545252;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+.CarliftForPassengerImageSection {
+  background-image: url("../../assets/CarliftForPassengerImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.CarliftForPassengerImageSection .FloatingContainer {
+  display: inline-flex;
+  padding: 4.861px;
+  align-items: center;
+  gap: 6.684px;
+  border-radius: 17.013px 9.722px 9.722px 17.013px;
+  border: 0.814px solid #fff;
+  background: #fff;
+  backdrop-filter: blur(30.290468215942383px);
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+}
+.CarliftForPassengerImageSection .FloatingContainer .FloatingContainerIcon {
+  display: flex;
+  width: 38px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 217, 59, 0.15);
+  background: #94d93b;
+}
+.CarliftForPassengerImageSection .FloatingContainer .FloatingContainerIcon img {
+  width: 100%;
+  height: 100%;
+}
+.CarliftForPassengerImageSection .FloatingContainer .FloatingContent {
+  color: #2a2a2a;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.608px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .CarliftForPassenger {
+    flex-direction: column;
+  }
+  .CarliftForPassengerContent {
+    width: 100%;
+  }
+  .CarliftForPassengerImageSection {
+    display: none;
+  }
+  .CarliftForPassengerLists .List .CarliftForPassengertextSection {
+    width: 100%;
+  }
+  .CarliftForPassengerLists .List .CarliftForPassengertextSection h1 {
+    font-size: 16px !important;
+  }
+  .CarliftForPassengerLists .List .CarliftForPassengertextSection p {
+    font-size: 8px !important;
+  }
+}

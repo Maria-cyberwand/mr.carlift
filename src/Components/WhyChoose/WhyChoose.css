@@ -1,0 +1,98 @@
+.WhyChooseContainer {
+  display: flex;
+  padding: 36px 30px 36px 60px;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 24px;
+  background: url("../../assets/WhyUsBackgroundImg.png") lightgray 0% 0% / 100px
+    100px repeat;
+  background-color: #1e1e1e;
+  position: relative;
+}
+.WhyChooseContainer::after {
+  border-radius: 22px;
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url(/src/assets/WhyChooseImg.png);
+  width: 100%;
+  background-position: center;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.WhyChooseContainer hr {
+  display: block;
+  z-index: 9;
+  height: 232px;
+  width: 1.5px;
+}
+.WhyChooseContainer .WhyChooseText {
+  display: flex;
+  padding: 13px 27px;
+  align-items: center;
+  gap: 60px;
+  z-index: 9;
+}
+.WhyChooseContainer .WhyChooseText h1 {
+  width: 255px;
+  color: #fff;
+  font-family: "Lufga Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144.45%; /* 66.447px */
+  letter-spacing: -1.84px;
+}
+.WhyChooseContainer .WhyChooseText h1 span {
+  color: var(--primary-color);
+}
+
+.WhyChooseText .TextContainer {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.WhyChooseText .TextContainer .TextBox {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(28px);
+}
+.WhyChooseText .TextContainer .TextBox h1 {
+  width: 255px;
+  color: #94d93b;
+  font-family: "Lufga Bold";
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144.45%; /* 66.447px */
+  letter-spacing: -1.84px;
+}
+.WhyChooseText .TextContainer .TextBox p {
+  color: #d9d9d9;
+  align-self: stretch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+@media screen and (max-width: 768px) {
+  .WhyChooseContainer .WhyChooseText {
+    flex-direction: column;
+  }
+  .WhyChooseText .TextContainer {
+    flex-direction: column;
+  }
+  .WhyChooseContainer hr {
+    height: 512px;
+  }
+}

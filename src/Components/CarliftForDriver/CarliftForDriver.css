@@ -1,0 +1,147 @@
+.CarliftForDriver {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 18px;
+}
+.CarliftForDriverImageSection {
+  background-image: url("../../assets/CarliftForDriverImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.CarliftForDriverImageSection .FloatingContainer {
+  display: inline-flex;
+  padding: 4.861px;
+  align-items: center;
+  gap: 6.684px;
+  border-radius: 17.013px 9.722px 9.722px 17.013px;
+  border: 0.814px solid #fff;
+  background: #fff;
+  backdrop-filter: blur(30.290468215942383px);
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+}
+.CarliftForDriverImageSection .FloatingContainer .FloatingContainerIcon {
+  display: flex;
+  width: 38px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 217, 59, 0.15);
+  background: #94d93b;
+}
+.CarliftForDriverImageSection .FloatingContainer .FloatingContainerIcon img {
+  width: 100%;
+  height: 100%;
+}
+.CarliftForDriverImageSection .FloatingContainer .FloatingContent {
+  color: #2a2a2a;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.608px;
+  text-decoration: none;
+}
+.CarliftForDriverContent {
+  display: flex;
+  padding: 45px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  width: 94%;
+}
+
+.CarliftForDriver .CarliftForDriverContent .CarliftForDriverText h1 {
+  color: #1a191b;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144.45%;
+  letter-spacing: -1.84px;
+}
+.CarliftForDriver .CarliftForDriverContent .CarliftForDriverText h1 span {
+  color: var(--primary-color);
+}
+
+.CarliftForDriver .CarliftForDriverContent .CarliftForDriverText p {
+  color: #545252;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.CarliftForDriverLists {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.CarliftForDriverLists .List {
+  display: flex;
+  gap: 22px;
+}
+.CarliftForDriverLists .List .CarliftForDriverimgSection {
+  display: flex;
+  width: 60px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22px;
+  border: 1.5px solid rgba(148, 217, 59, 0.15);
+  background: #94d93b;
+}
+.CarliftForDriverLists .CarliftForDriverimgSection img {
+  width: 100%;
+  height: 100%;
+}
+.CarliftForDriverLists .List .CarliftForDrivertextSection {
+  display: flex;
+  flex-direction: column;
+}
+.CarliftForDriverLists .List .CarliftForDrivertextSection h1 {
+  color: #1e1e1e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 127.273% */
+}
+.CarliftForDriverLists .List .CarliftForDrivertextSection p {
+  color: #545252;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+@media screen and (max-width: 768px) {
+  .CarliftForDriver {
+    flex-direction: column;
+  }
+  .CarliftForDriverContent {
+    width: 100%;
+  }
+  .CarliftForDriverImageSection {
+    display: none;
+  }
+  .CarliftForDriverLists .List .CarliftForDrivertextSection {
+    width: 100%;
+  }
+  .CarliftForDriverLists .List .CarliftForDrivertextSection h1 {
+    font-size: 16px !important;
+  }
+  .CarliftForDriverLists .List .CarliftForDrivertextSection p {
+    font-size: 8px !important;
+  }
+}
